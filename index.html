@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JNDGames — COIN UP! 8-bit Mini Arcade</title>
+<meta name="description" content="JNDGames is an indie game studio creating retro 8-bit mini-game collections. Currently working on COIN UP!">
+<meta property="og:title" content="JNDGames">
+<meta property="og:description" content="Retro 8-bit Mini Arcade — COIN UP!">
+<meta property="og:type" content="website">
+<style>
+:root {
+  --bg: #1a1a2e;
+  --bg2: #16213e;
+  --gold: #ffd700;
+  --gold-shadow: #ffa500;
+  --cyan: #00d9ff;
+  --pink: #ff1b6b;
+  --green: #00ff88;
+  --text: #ffffff;
+  --text-sub: #888888;
+  --card: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.1);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background: linear-gradient(135deg, var(--bg) 0%, var(--bg2) 100%);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+  padding: 0 16px;
+}
+.container { max-width: 960px; margin: 0 auto; padding: 64px 0 96px; }
+header { text-align: center; padding: 48px 0; border-bottom: 1px solid var(--border); }
+.logo {
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--gold);
+  text-shadow: 4px 4px 0 var(--gold-shadow), 8px 8px 0 rgba(0, 0, 0, 0.3);
+  letter-spacing: -2px;
+  margin-bottom: 8px;
+  font-family: "Press Start 2P", "Courier New", monospace;
+}
+.tagline { color: var(--text-sub); font-size: 18px; }
+.tagline-en { color: var(--cyan); font-size: 14px; margin-top: 4px; }
+
+section { margin-top: 48px; }
+section h2 {
+  color: var(--cyan);
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-left: 4px solid var(--gold);
+  padding-left: 12px;
+}
+section p { color: var(--text-sub); margin-bottom: 12px; }
+section strong { color: var(--text); }
+
+.coin-app {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.coin-app .icon {
+  font-size: 72px;
+  flex-shrink: 0;
+}
+.coin-app .info h3 {
+  color: var(--gold);
+  font-size: 28px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+.coin-app .info .meta {
+  color: var(--text-sub);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.coin-app .info p { color: var(--text); margin-bottom: 0; }
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.game-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+.game-card .name { color: var(--gold); font-weight: bold; font-size: 14px; }
+.game-card .genre { color: var(--text-sub); font-size: 12px; margin-top: 4px; }
+
+footer {
+  margin-top: 96px;
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-sub);
+  font-size: 14px;
+}
+footer a {
+  color: var(--cyan);
+  text-decoration: none;
+  margin: 0 12px;
+}
+footer a:hover { text-decoration: underline; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 16px;
+}
+.contact-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+.contact-card h4 { color: var(--gold); margin-bottom: 8px; }
+.contact-card p { color: var(--text); margin: 0; }
+
+@media (max-width: 640px) {
+  .logo { font-size: 40px; }
+  .coin-app { flex-direction: column; text-align: center; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="logo">JNDGames</div>
+  <div class="tagline">8비트 레트로 픽셀 아케이드 게임 스튜디오</div>
+  <div class="tagline-en">Indie studio building retro 8-bit mini-game collections.</div>
+</header>
+
+<section>
+  <h2>소개 / About</h2>
+  <p><strong>JNDGames</strong>는 8~16비트 레트로 감성을 담은 모바일 미니게임을 개발하는 인디 스튜디오입니다. 짧고 굵은 한 판, 그러나 의도된 디자인. 우리는 픽셀 아트와 정확한 게임 메커니즘을 통해 90년대 오락실의 즐거움을 모바일에 다시 가져옵니다.</p>
+  <p><strong>JNDGames</strong> is an indie studio building retro 8-bit mobile mini-games. Short, satisfying play sessions with intentional design. We bring the joy of '90s arcades back to mobile through pixel art and precise game mechanics.</p>
+</section>
+
+<section>
+  <h2>현재 작업 중 / Currently Working On</h2>
+  <div class="coin-app">
+    <div class="icon">🪙</div>
+    <div class="info">
+      <h3>COIN UP!</h3>
+      <div class="meta">8-bit Retro Mini Arcade · Mobile (iOS / Android)</div>
+      <p>한 앱 안에 담긴 8가지 미니게임. 한 코인이면 충분합니다. 출시 예정 — 2026.</p>
+      <p>Eight mini-games in one pixel arcade pack. One coin is all it takes. Coming 2026.</p>
+    </div>
+  </div>
+
+  <div class="games-grid">
+    <div class="game-card"><div class="name">MAZE SHIFT</div><div class="genre">Puzzle Runner</div></div>
+    <div class="game-card"><div class="name">PIXEL TOWER</div><div class="genre">Timing Action</div></div>
+    <div class="game-card"><div class="name">ENDLESS STAIRS</div><div class="genre">Endless Action</div></div>
+    <div class="game-card"><div class="name">DOT STRIKER</div><div class="genre">Shooter Action</div></div>
+    <div class="game-card"><div class="name">BLOCK RUSH</div><div class="genre">Placement Puzzle</div></div>
+    <div class="game-card"><div class="name">MERGE FLUX</div><div class="genre">Merge Puzzle</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>문의 / Contact</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h4>📧 General Inquiry</h4>
+      <p>jndgamestudio@gmail.com</p>
+    </div>
+    <div class="contact-card">
+      <h4>🐛 Support / Bug Report</h4>
+      <p>jndgamestudio@gmail.com</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>법적 문서 / Legal</h2>
+  <p>
+    <a href="privacy.html" style="color: var(--cyan); margin-right: 16px;">개인정보처리방침 / Privacy Policy</a>
+    <a href="terms.html" style="color: var(--cyan);">이용약관 / Terms of Service</a>
+  </p>
+</section>
+
+<footer>
+  &copy; 2026 JNDGames. All rights reserved.<br>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="mailto:jndgamestudio@gmail.com">Contact</a>
+</footer>
+
+</div>
+</body>
+</html>
