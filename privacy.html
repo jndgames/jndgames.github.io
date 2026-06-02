@@ -140,7 +140,7 @@ a { color: var(--cyan); }
   <div class="meta">
     <strong>적용 대상</strong>: COIN UP! (이하 "본 앱")<br>
     <strong>시행일자</strong>: 2026년 5월 17일<br>
-    <strong>최종 수정일</strong>: 2026-05-17
+    <strong>최종 수정일</strong>: 2026-06-02
   </div>
 
   <h2>1. 개요</h2>
@@ -156,6 +156,7 @@ a { color: var(--cyan); }
     <li><strong>네트워크 정보</strong>: IP 주소(국가/도시 수준 추정용), 모바일 통신사 식별자, 네트워크 유형</li>
     <li><strong>앱 사용 데이터</strong>: 게임별 플레이 횟수/시간, 점수 통계, 충돌 보고서</li>
     <li><strong>광고 상호작용 데이터</strong>: 광고 노출/클릭/완료 여부</li>
+    <li><strong>구매 내역</strong>: 사용자가 본 앱에서 구매한 인앱 상품(예: 광고 제거)의 보유 여부 플래그. 결제 자체는 Google Play 결제 시스템(Google Play Billing)이 처리하며, 신용카드 번호·은행 계좌 정보 등 결제 수단 정보는 본 앱이 직접 수집하지 않습니다.</li>
   </ul>
 
   <h3>2.2 수집하지 않는 정보</h3>
@@ -169,6 +170,7 @@ a { color: var(--cyan); }
   <ol>
     <li><strong>광고 송출 및 최적화</strong>: 사용자에게 적합한 광고를 표시하여 무료 서비스 유지</li>
     <li><strong>앱 기능 제공</strong>: 게임 진행 상태 저장, 충돌 진단</li>
+    <li><strong>인앱 결제 처리</strong>: 광고 제거 등 인앱 상품 구매 시 구매 영수증 확인 및 광고 비활성화 플래그 적용. 결제 처리·환불·과금은 Google Play 결제 시스템이 담당하며, 본 앱은 구매 보유 여부만 확인합니다.</li>
     <li><strong>서비스 분석 및 개선</strong>: 게임별 인기도 측정, 콘텐츠 업데이트 우선순위 결정</li>
     <li><strong>부정 이용 방지</strong>: 비정상적 광고 클릭 등 어뷰징 탐지</li>
   </ol>
@@ -179,6 +181,7 @@ a { color: var(--cyan); }
     <li>기기/네트워크 정보: 최대 24개월</li>
     <li>앱 사용 데이터: 최대 24개월</li>
     <li>충돌 보고서: 최대 12개월</li>
+    <li>구매 내역(보유 플래그): 사용자가 앱을 삭제하지 않는 한 영구 보유. 재설치 시 Google Play 계정 기반으로 자동 복원됩니다. 실제 결제 영수증은 Google Play 결제 시스템이 보관합니다.</li>
   </ul>
 
   <h2>5. 개인정보의 제3자 제공 및 처리위탁</h2>
@@ -192,6 +195,7 @@ a { color: var(--cyan); }
       <tr><td>Meta Platforms (Audience Network)</td><td>광고 송출</td><td>광고 식별자, 기기 정보</td></tr>
       <tr><td>AppLovin Corporation</td><td>광고 송출</td><td>광고 식별자, 기기 정보</td></tr>
       <tr><td>Vungle (Liftoff)</td><td>광고 송출</td><td>광고 식별자, 기기 정보</td></tr>
+      <tr><td>Google LLC (Google Play Billing)</td><td>인앱 결제 처리, 환불 처리, 구독·일회성 상품 영수증 발급</td><td>구매한 상품 ID, 영수증, 결제 수단 정보(Google 측 처리)</td></tr>
     </tbody>
   </table>
 
@@ -212,7 +216,17 @@ a { color: var(--cyan); }
   <h2>8. 광고 정책 및 보상형 광고</h2>
   <p>본 앱은 무료 서비스이며 광고로 운영됩니다. 광고는 게임 진행을 방해하지 않는 시점에만 노출되며, "이어하기"나 "보너스 획득" 같은 보상형 광고는 항상 선택사항입니다.</p>
 
-  <h2>9. 개인정보 보호책임자 및 연락처</h2>
+  <h2>9. 인앱 결제 및 환불 정책</h2>
+  <p>본 앱은 광고 제거 등 일부 부가 기능을 인앱 상품으로 판매합니다.</p>
+  <ul>
+    <li><strong>결제 시스템</strong>: 모든 결제는 Google Play 결제 시스템(Google Play Billing)을 통해 처리됩니다. 본 앱은 신용카드 번호, 은행 계좌 정보 등 결제 수단 정보를 직접 수집·저장하지 않습니다.</li>
+    <li><strong>일회성 결제</strong>: 광고 제거 상품은 일회성 결제이며, 동일한 Google 계정에서 재설치하거나 다른 단말에 로그인할 때 자동으로 복원됩니다.</li>
+    <li><strong>환불 정책</strong>: 환불은 Google Play의 환불 정책을 따릅니다. 결제 후 48시간 이내에는 Google Play 스토어에서 사용자가 직접 환불을 신청할 수 있으며, 그 이후는 회사 또는 Google에 문의하셔야 합니다. 환불이 완료되면 광고 제거 효과는 다시 비활성화됩니다.</li>
+    <li><strong>구독 여부</strong>: 본 앱의 인앱 상품은 일회성 구매이며, 자동 갱신 구독은 제공하지 않습니다.</li>
+    <li><strong>가격</strong>: 국가별 가격이 다르게 책정될 수 있으며, 결제 화면에 표시되는 가격이 최종 가격입니다. Google Play가 해당 국가의 부가세를 자동 처리합니다.</li>
+  </ul>
+
+  <h2>10. 개인정보 보호책임자 및 연락처</h2>
   <table>
     <tbody>
       <tr><th>회사명 (상호)</th><td>정릉동게임즈</td></tr>
@@ -229,13 +243,319 @@ a { color: var(--cyan); }
     </tbody>
   </table>
 
-  <h2>10. 개인정보 침해 구제 방법</h2>
+  <h2>11. 개인정보 침해 구제 방법</h2>
   <ul>
     <li>개인정보침해신고센터 (한국인터넷진흥원): privacy.kisa.or.kr / 국번없이 118</li>
     <li>개인정보 분쟁조정위원회: kopico.go.kr / 1833-6972</li>
   </ul>
 
-  <h2>11. 개인정보처리방침의 변경</h2>
+  <h2>12. 개인정보처리방침의 변경</h2>
+  <p>본 방침은 법령, 정책 또는 보안 기술의 변경에 따라 내용이 추가, 삭제 및 수정될 수 있으며, 변경 시 앱 내 공지 또는 본 페이지의 "최종 수정일" 갱신을 통해 안내합니다.</p>
+</article>
+
+<!-- ========== English ========== -->
+<article id="en" class="lang-section">
+  <h1>Privacy Policy</h1>
+  <div class="meta">
+    <strong>Application</strong>: COIN UP! ("the App")<br>
+    <strong>Effective Date</strong>: May 17, 2026<br>
+    <strong>Last Updated</strong>: 2026-05-17
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>Jeongneung-dong Games (operating as "JNDGames"; "we", "us", or "our") values your privacy. This Privacy Policy explains how information is collected, used, and shared when you use our mini-game collection app, "COIN UP!". By using the App, you agree to the collection and use of information in accordance with this policy.</p>
+
+  <h2>2. Information We Collect</h2>
+  <p>The App does not require account registration and we do not directly collect personally identifiable information (PII) from users.</p>
+
+  <h3>2.1 Automatically Collected Information</h3>
+  <ul>
+    <li><strong>Advertising Identifiers</strong>: Google Advertising ID (GAID/AAID) on Android, IDFA on iOS</li>
+    <li><strong>Device Information</strong>: OS version, device model, language, timezone, screen resolution</li>
+    <li><strong>Network Information</strong>: IP address (for country/city-level inference), mobile carrier, network type</li>
+    <li><strong>App Usage Data</strong>: Plays per game, play time, score statistics, crash reports</li>
+    <li><strong>Ad Interaction Data</strong>: Ad impressions, clicks, completion of rewarded ads</li>
+  </ul>
+
+  <h3>2.2 Information We Do Not Collect</h3>
+  <ul>
+    <li>Direct identifiers such as name, email, phone number</li>
+    <li>Precise location (GPS)</li>
+    <li>Photos, contacts, calendar, SMS, or other on-device personal data</li>
+  </ul>
+
+  <h2>3. Purpose of Collection</h2>
+  <ol>
+    <li>Advertisement delivery and optimization</li>
+    <li>App functionality (saving progress, diagnosing crashes)</li>
+    <li>Service analysis and improvement</li>
+    <li>Fraud prevention</li>
+  </ol>
+
+  <h2>4. Data Retention</h2>
+  <ul>
+    <li>Advertising identifiers: up to 13 months</li>
+    <li>Device and network information: up to 24 months</li>
+    <li>App usage data: up to 24 months</li>
+    <li>Crash reports: up to 12 months</li>
+  </ul>
+
+  <h2>5. Third-Party Sharing</h2>
+  <p>We share data with the following third parties for ad delivery and analytics:</p>
+  <table>
+    <thead>
+      <tr><th>Provider</th><th>Purpose</th></tr>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보처리방침 / Privacy Policy — JNDGames</title>
+<style>
+:root {
+  --bg: #1a1a2e;
+  --bg2: #16213e;
+  --gold: #ffd700;
+  --cyan: #00d9ff;
+  --text: #ffffff;
+  --text-sub: #aaaaaa;
+  --card: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.1);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background: linear-gradient(135deg, var(--bg) 0%, var(--bg2) 100%);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.7;
+  padding: 0 16px;
+}
+.container { max-width: 820px; margin: 0 auto; padding: 48px 0 96px; }
+
+.lang-switch {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+.lang-switch a {
+  padding: 8px 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+.lang-switch a.active { background: var(--gold); color: var(--bg); border-color: var(--gold); }
+
+nav.breadcrumb {
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+nav.breadcrumb a { color: var(--cyan); text-decoration: none; }
+nav.breadcrumb a:hover { text-decoration: underline; }
+
+h1 {
+  color: var(--gold);
+  font-size: 32px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 12px;
+}
+.meta {
+  color: var(--text-sub);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+h2 {
+  color: var(--cyan);
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  border-left: 4px solid var(--gold);
+  padding-left: 12px;
+}
+h3 {
+  color: var(--text);
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+p, li { color: var(--text-sub); margin-bottom: 12px; }
+strong { color: var(--text); }
+ul, ol { margin: 12px 0 16px 24px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  background: var(--card);
+  border-radius: 8px;
+  overflow: hidden;
+}
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+th { background: rgba(255, 215, 0, 0.1); color: var(--gold); font-weight: 600; }
+td { color: var(--text-sub); }
+
+.warning {
+  background: rgba(255, 215, 0, 0.1);
+  border-left: 4px solid var(--gold);
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 96px;
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-sub);
+  font-size: 14px;
+}
+footer a { color: var(--cyan); text-decoration: none; margin: 0 12px; }
+
+.lang-section { margin-top: 48px; padding-top: 48px; border-top: 2px dashed var(--border); }
+
+a { color: var(--cyan); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<nav class="breadcrumb">
+  <a href="index.html">← JNDGames</a>
+</nav>
+
+<div class="lang-switch">
+  <a href="#ko" class="active">한국어</a>
+  <a href="#en">English</a>
+</div>
+
+<!-- ========== Korean ========== -->
+<article id="ko">
+  <h1>개인정보처리방침</h1>
+  <div class="meta">
+    <strong>적용 대상</strong>: COIN UP! (이하 "본 앱")<br>
+    <strong>시행일자</strong>: 2026년 5월 17일<br>
+    <strong>최종 수정일</strong>: 2026-06-02
+  </div>
+
+  <h2>1. 개요</h2>
+  <p>정릉동게임즈(브랜드: JNDGames, 이하 "회사")는 사용자의 개인정보를 중요시하며, 「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관련 법령을 준수합니다. 본 개인정보처리방침은 회사가 제공하는 미니게임 모음집 앱 "COIN UP!"의 운영 과정에서 수집되는 개인정보의 처리 기준을 안내합니다.</p>
+
+  <h2>2. 수집하는 개인정보 항목</h2>
+  <p>본 앱은 회원가입 절차가 없으며, 사용자로부터 직접 개인정보를 수집하지 않습니다. 다만, 앱의 정상적인 운영과 광고 송출, 서비스 개선을 위해 다음의 정보가 자동으로 수집됩니다.</p>
+
+  <h3>2.1 자동 수집 정보</h3>
+  <ul>
+    <li><strong>광고 식별자</strong>: Google Play 광고 ID (GAID/AAID), Apple IDFA</li>
+    <li><strong>기기 정보</strong>: 운영체제 버전, 기기 모델명, 언어 설정, 시간대, 화면 해상도</li>
+    <li><strong>네트워크 정보</strong>: IP 주소(국가/도시 수준 추정용), 모바일 통신사 식별자, 네트워크 유형</li>
+    <li><strong>앱 사용 데이터</strong>: 게임별 플레이 횟수/시간, 점수 통계, 충돌 보고서</li>
+    <li><strong>광고 상호작용 데이터</strong>: 광고 노출/클릭/완료 여부</li>
+    <li><strong>구매 내역</strong>: 사용자가 본 앱에서 구매한 인앱 상품(예: 광고 제거)의 보유 여부 플래그. 결제 자체는 Google Play 결제 시스템(Google Play Billing)이 처리하며, 신용카드 번호·은행 계좌 정보 등 결제 수단 정보는 본 앱이 직접 수집하지 않습니다.</li>
+  </ul>
+
+  <h3>2.2 수집하지 않는 정보</h3>
+  <ul>
+    <li>이름, 이메일 주소, 전화번호 등 직접 식별 가능한 개인정보</li>
+    <li>정확한 위치 정보(GPS)</li>
+    <li>사진, 연락처, 캘린더, 문자메시지 등 단말기 저장소의 개인 자료</li>
+  </ul>
+
+  <h2>3. 개인정보 수집 및 이용 목적</h2>
+  <ol>
+    <li><strong>광고 송출 및 최적화</strong>: 사용자에게 적합한 광고를 표시하여 무료 서비스 유지</li>
+    <li><strong>앱 기능 제공</strong>: 게임 진행 상태 저장, 충돌 진단</li>
+    <li><strong>인앱 결제 처리</strong>: 광고 제거 등 인앱 상품 구매 시 구매 영수증 확인 및 광고 비활성화 플래그 적용. 결제 처리·환불·과금은 Google Play 결제 시스템이 담당하며, 본 앱은 구매 보유 여부만 확인합니다.</li>
+    <li><strong>서비스 분석 및 개선</strong>: 게임별 인기도 측정, 콘텐츠 업데이트 우선순위 결정</li>
+    <li><strong>부정 이용 방지</strong>: 비정상적 광고 클릭 등 어뷰징 탐지</li>
+  </ol>
+
+  <h2>4. 개인정보의 보유 및 이용 기간</h2>
+  <ul>
+    <li>광고 식별자 및 광고 상호작용 데이터: 최대 13개월</li>
+    <li>기기/네트워크 정보: 최대 24개월</li>
+    <li>앱 사용 데이터: 최대 24개월</li>
+    <li>충돌 보고서: 최대 12개월</li>
+    <li>구매 내역(보유 플래그): 사용자가 앱을 삭제하지 않는 한 영구 보유. 재설치 시 Google Play 계정 기반으로 자동 복원됩니다. 실제 결제 영수증은 Google Play 결제 시스템이 보관합니다.</li>
+  </ul>
+
+  <h2>5. 개인정보의 제3자 제공 및 처리위탁</h2>
+  <table>
+    <thead>
+      <tr><th>위탁받는 자</th><th>위탁 업무</th><th>제공 정보</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Unity Technologies (LevelPlay)</td><td>광고 미디에이션 SDK</td><td>광고 식별자, 기기 정보, 광고 상호작용 데이터</td></tr>
+      <tr><td>Google LLC (AdMob, Play Services)</td><td>광고 송출, 앱 분석</td><td>광고 식별자, 기기 정보, 앱 사용 데이터</td></tr>
+      <tr><td>Meta Platforms (Audience Network)</td><td>광고 송출</td><td>광고 식별자, 기기 정보</td></tr>
+      <tr><td>AppLovin Corporation</td><td>광고 송출</td><td>광고 식별자, 기기 정보</td></tr>
+      <tr><td>Vungle (Liftoff)</td><td>광고 송출</td><td>광고 식별자, 기기 정보</td></tr>
+      <tr><td>Google LLC (Google Play Billing)</td><td>인앱 결제 처리, 환불 처리, 구독·일회성 상품 영수증 발급</td><td>구매한 상품 ID, 영수증, 결제 수단 정보(Google 측 처리)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>6. 사용자의 권리</h2>
+
+  <h3>6.1 광고 추적 거부 (광고 식별자 재설정)</h3>
+  <ul>
+    <li><strong>Android</strong>: 설정 → Google → 광고 → "광고 ID 삭제" 또는 "내 광고 ID 재설정"</li>
+    <li><strong>iOS</strong>: 설정 → 개인정보 보호 및 보안 → 추적 → "앱이 추적을 요청하도록 허용" 끄기</li>
+  </ul>
+
+  <h3>6.2 정보 열람·삭제·처리정지 요청</h3>
+  <p>사용자는 본 앱이 보유한 사용자 정보의 열람, 삭제, 처리 정지를 요청할 수 있습니다. 요청은 본 방침 제9항의 연락처로 보내주시면 14일 이내 답변드립니다.</p>
+
+  <h2>7. 만 14세 미만 아동의 개인정보</h2>
+  <p>본 앱은 만 14세 미만 아동을 주된 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+  <h2>8. 광고 정책 및 보상형 광고</h2>
+  <p>본 앱은 무료 서비스이며 광고로 운영됩니다. 광고는 게임 진행을 방해하지 않는 시점에만 노출되며, "이어하기"나 "보너스 획득" 같은 보상형 광고는 항상 선택사항입니다.</p>
+
+  <h2>9. 인앱 결제 및 환불 정책</h2>
+  <p>본 앱은 광고 제거 등 일부 부가 기능을 인앱 상품으로 판매합니다.</p>
+  <ul>
+    <li><strong>결제 시스템</strong>: 모든 결제는 Google Play 결제 시스템(Google Play Billing)을 통해 처리됩니다. 본 앱은 신용카드 번호, 은행 계좌 정보 등 결제 수단 정보를 직접 수집·저장하지 않습니다.</li>
+    <li><strong>일회성 결제</strong>: 광고 제거 상품은 일회성 결제이며, 동일한 Google 계정에서 재설치하거나 다른 단말에 로그인할 때 자동으로 복원됩니다.</li>
+    <li><strong>환불 정책</strong>: 환불은 Google Play의 환불 정책을 따릅니다. 결제 후 48시간 이내에는 Google Play 스토어에서 사용자가 직접 환불을 신청할 수 있으며, 그 이후는 회사 또는 Google에 문의하셔야 합니다. 환불이 완료되면 광고 제거 효과는 다시 비활성화됩니다.</li>
+    <li><strong>구독 여부</strong>: 본 앱의 인앱 상품은 일회성 구매이며, 자동 갱신 구독은 제공하지 않습니다.</li>
+    <li><strong>가격</strong>: 국가별 가격이 다르게 책정될 수 있으며, 결제 화면에 표시되는 가격이 최종 가격입니다. Google Play가 해당 국가의 부가세를 자동 처리합니다.</li>
+  </ul>
+
+  <h2>10. 개인정보 보호책임자 및 연락처</h2>
+  <table>
+    <tbody>
+      <tr><th>회사명 (상호)</th><td>정릉동게임즈</td></tr>
+      <tr><th>서비스 브랜드</th><td>JNDGames</td></tr>
+      <tr><th>사업자 형태</th><td>개인사업자</td></tr>
+      <tr><th>사업자등록번호</th><td>310-29-10293</td></tr>
+      <tr><th>D-U-N-S 번호</th><td>696554339</td></tr>
+      <tr><th>대표자</th><td>서주원</td></tr>
+      <tr><th>사업장 주소</th><td>서울특별시 성북구 아리랑로19다길 15 (정릉동) (우편번호 02820)</td></tr>
+      <tr><th>개인정보 보호책임자</th><td>서주원 (대표 겸직)</td></tr>
+      <tr><th>이메일</th><td>jndgamestudio@gmail.com</td></tr>
+      <tr><th>전화</th><td>+82-10-2918-6647</td></tr>
+      <tr><th>웹사이트</th><td>https://jndgames.github.io</td></tr>
+    </tbody>
+  </table>
+
+  <h2>11. 개인정보 침해 구제 방법</h2>
+  <ul>
+    <li>개인정보침해신고센터 (한국인터넷진흥원): privacy.kisa.or.kr / 국번없이 118</li>
+    <li>개인정보 분쟁조정위원회: kopico.go.kr / 1833-6972</li>
+  </ul>
+
+  <h2>12. 개인정보처리방침의 변경</h2>
   <p>본 방침은 법령, 정책 또는 보안 기술의 변경에 따라 내용이 추가, 삭제 및 수정될 수 있으며, 변경 시 앱 내 공지 또는 본 페이지의 "최종 수정일" 갱신을 통해 안내합니다.</p>
 </article>
 
