@@ -147,19 +147,23 @@ a { color: var(--cyan); }
   <p>정릉동게임즈(브랜드: JNDGames, 이하 "회사")는 사용자의 개인정보를 중요시하며, 「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관련 법령을 준수합니다. 본 개인정보처리방침은 회사가 제공하는 미니게임 모음집 앱 "COIN UP!"의 운영 과정에서 수집되는 개인정보의 처리 기준을 안내합니다.</p>
 
   <h2>2. 수집하는 개인정보 항목</h2>
-  <p>본 앱은 회원가입 절차가 없으며, 사용자로부터 직접 개인정보를 수집하지 않습니다. 다만, 앱의 정상적인 운영과 광고 송출, 서비스 개선을 위해 다음의 정보가 자동으로 수집됩니다.</p>
+  <p>본 앱은 회원가입 절차가 없으며, 사용자로부터 직접 개인정보를 수집하지 않습니다. 다만, 앱의 정상적인 운영과 광고 송출, 결제 처리, 서비스 안정성 확인을 위해 다음의 정보가 자동으로 수집될 수 있습니다.</p>
 
   <h3>2.1 자동 수집 정보</h3>
   <ul>
-    <li><strong>광고 식별자</strong>: Google Play 광고 ID (GAID/AAID), Apple IDFA. 사용자가 광고 추적을 거부한 경우 수집되지 않습니다.</li>
+    <li><strong>광고 식별자</strong>: Google Play 광고 ID (GAID/AAID), Apple IDFA(iOS 배포 시 사용자가 허용한 경우)</li>
     <li><strong>기기 정보</strong>: 운영체제 버전, 기기 모델명, 언어 설정, 시간대, 화면 해상도</li>
     <li><strong>네트워크 정보</strong>: IP 주소(국가/도시 수준 추정용), 모바일 통신사 식별자, 네트워크 유형</li>
-    <li><strong>앱 사용 데이터</strong>: 게임별 플레이 횟수/시간, 점수 통계</li>
+    <li><strong>앱 사용 데이터</strong>: 게임별 플레이 횟수/시간, 점수 통계, 충돌 보고서</li>
     <li><strong>광고 상호작용 데이터</strong>: 광고 노출/클릭/완료 여부</li>
-    <li><strong>구매 내역</strong>: 사용자가 본 앱에서 구매한 인앱 상품(예: 광고 제거)의 보유 여부 플래그. 결제 자체는 Google Play 결제 시스템(Google Play Billing) 또는 Apple App Store 결제 시스템이 처리하며, 신용카드 번호·은행 계좌 정보 등 결제 수단 정보는 본 앱이 직접 수집하지 않습니다.</li>
+    <li><strong>업데이트 확인 정보</strong>: 앱 버전, 플랫폼, 접속 시점, IP 주소 등 업데이트 가능 여부와 서비스 안정성 확인에 필요한 최소 정보</li>
+    <li><strong>구매 내역</strong>: 사용자가 본 앱에서 구매한 인앱 상품(예: 광고 제거)의 보유 여부 플래그. 결제 자체는 Google Play 결제 시스템(Google Play Billing)이 처리하며, 신용카드 번호·은행 계좌 정보 등 결제 수단 정보는 본 앱이 직접 수집하지 않습니다.</li>
   </ul>
 
-  <h3>2.2 수집하지 않는 정보</h3>
+  <h3>2.2 단말 내 저장 정보</h3>
+  <p>본 앱은 게임 기능 제공을 위해 단말 내 저장소에 로컬 플레이어 ID, 게임별 최고 점수, 플레이 횟수, 게임 내 재화, 설정값, 광고 제거 보유 여부 등을 저장할 수 있습니다. 이 정보는 기본적으로 회사 서버로 전송되지 않으며, 앱 삭제 또는 단말 데이터 삭제 시 함께 삭제됩니다.</p>
+
+  <h3>2.3 수집하지 않는 정보</h3>
   <ul>
     <li>이름, 이메일 주소, 전화번호 등 직접 식별 가능한 개인정보</li>
     <li>정확한 위치 정보(GPS)</li>
@@ -169,8 +173,9 @@ a { color: var(--cyan); }
   <h2>3. 개인정보 수집 및 이용 목적</h2>
   <ol>
     <li><strong>광고 송출 및 최적화</strong>: 사용자에게 적합한 광고를 표시하여 무료 서비스 유지</li>
-    <li><strong>앱 기능 제공</strong>: 게임 진행 상태 저장</li>
-    <li><strong>인앱 결제 처리</strong>: 광고 제거 등 인앱 상품 구매 시 구매 영수증 확인 및 광고 비활성화 플래그 적용. 결제 처리·환불·과금은 각 플랫폼의 결제 시스템이 담당하며, 본 앱은 구매 보유 여부만 확인합니다.</li>
+    <li><strong>앱 기능 제공</strong>: 게임 진행 상태 저장, 충돌 진단</li>
+    <li><strong>인앱 결제 처리</strong>: 광고 제거 등 인앱 상품 구매 시 구매 영수증 확인 및 광고 비활성화 플래그 적용. 결제 처리·환불·과금은 Google Play 결제 시스템이 담당하며, 본 앱은 구매 보유 여부만 확인합니다.</li>
+    <li><strong>업데이트 확인 및 서비스 안정성</strong>: 최신 버전 안내, 필수 업데이트 여부 확인, 비정상 접속 또는 서비스 장애 확인</li>
     <li><strong>서비스 분석 및 개선</strong>: 게임별 인기도 측정, 콘텐츠 업데이트 우선순위 결정</li>
     <li><strong>부정 이용 방지</strong>: 비정상적 광고 클릭 등 어뷰징 탐지</li>
   </ol>
@@ -180,7 +185,10 @@ a { color: var(--cyan); }
     <li>광고 식별자 및 광고 상호작용 데이터: 최대 13개월</li>
     <li>기기/네트워크 정보: 최대 24개월</li>
     <li>앱 사용 데이터: 최대 24개월</li>
-    <li>구매 내역(보유 플래그): 사용자가 앱을 삭제하지 않는 한 영구 보유. 재설치 시 Google 또는 Apple 계정 기반으로 자동 복원됩니다. 실제 결제 영수증은 해당 플랫폼의 결제 시스템이 보관합니다.</li>
+    <li>충돌 보고서: 최대 12개월</li>
+    <li>단말 내 로컬 저장 정보: 사용자가 앱을 삭제하거나 단말의 앱 데이터를 삭제할 때까지</li>
+    <li>업데이트 확인 접속 로그: 서비스 운영 및 보안을 위해 필요한 기간 동안 보관되며, 호스팅 제공자의 로그 정책이 적용될 수 있습니다.</li>
+    <li>구매 내역(보유 플래그): 사용자가 앱을 삭제하지 않는 한 영구 보유. 재설치 시 Google Play 계정 기반으로 자동 복원됩니다. 실제 결제 영수증은 Google Play 결제 시스템이 보관합니다.</li>
   </ul>
 
   <h2>5. 개인정보의 제3자 제공 및 처리위탁</h2>
@@ -189,17 +197,16 @@ a { color: var(--cyan); }
       <tr><th>위탁받는 자</th><th>위탁 업무</th><th>제공 정보</th></tr>
     </thead>
     <tbody>
-      <tr><td>Unity Technologies (LevelPlay 미디에이션, Unity Ads · ironSource 광고망 포함)</td><td>광고 미디에이션 SDK 및 광고 송출</td><td>광고 식별자, 기기 정보, 광고 상호작용 데이터, 대략적 위치(IP 기반)</td></tr>
-      <tr><td>Google LLC (Google Play Services)</td><td>광고 식별자(GAID) 발급 및 관리</td><td>광고 식별자</td></tr>
-      <tr><td>Apple Inc. (iOS Ad Services)</td><td>광고 식별자(IDFA) 발급 및 관리 (iOS 한정)</td><td>광고 식별자</td></tr>
-      <tr><td>Google LLC (Google Play Billing) / Apple Inc. (App Store)</td><td>인앱 결제 처리, 환불 처리, 영수증 발급</td><td>구매한 상품 ID, 영수증, 결제 수단 정보(각 플랫폼 측에서 처리)</td></tr>
+      <tr><td>Unity Technologies (Unity LevelPlay, Unity Ads)</td><td>광고 미디에이션 및 광고 송출</td><td>광고 식별자, 기기 정보, 대략적 위치, 앱 사용 데이터, 광고 상호작용 데이터</td></tr>
+      <tr><td>Google LLC (Google Play Billing)</td><td>인앱 결제 처리, 환불 처리, 구독·일회성 상품 영수증 발급</td><td>구매한 상품 ID, 영수증, 결제 수단 정보(Google 측 처리)</td></tr>
+      <tr><td>Cloudflare, Inc.</td><td>버전 확인 서버 호스팅, 보안 및 접속 로그 처리</td><td>IP 주소, 접속 시점, 요청 URL, 브라우저/기기 네트워크 정보</td></tr>
     </tbody>
   </table>
+  <p>추후 Unity LevelPlay에서 추가 광고 미디에이션 네트워크를 활성화하는 경우, 본 개인정보처리방침과 스토어 데이터 안전 정보도 함께 갱신합니다.</p>
 
   <h2>6. 사용자의 권리</h2>
 
-  <h3>6.1 광고 추적 거부</h3>
-  <p>본 앱은 첫 실행 시 광고 추적 동의 여부를 묻는 화면을 표시합니다. 거부하셔도 앱은 정상적으로 이용 가능하며, 광고는 비맞춤형으로 송출됩니다. 동의/거부 상태는 옵션 화면 또는 단말기 설정에서 언제든 변경할 수 있습니다.</p>
+  <h3>6.1 광고 추적 거부 (광고 식별자 재설정)</h3>
   <ul>
     <li><strong>Android</strong>: 설정 → Google → 광고 → "광고 ID 삭제" 또는 "내 광고 ID 재설정"</li>
     <li><strong>iOS</strong>: 설정 → 개인정보 보호 및 보안 → 추적 → "앱이 추적을 요청하도록 허용" 끄기</li>
@@ -209,7 +216,7 @@ a { color: var(--cyan); }
   <p>사용자는 본 앱이 보유한 사용자 정보의 열람, 삭제, 처리 정지를 요청할 수 있습니다. 요청은 본 방침 제10항의 연락처로 보내주시면 14일 이내 답변드립니다.</p>
 
   <h2>7. 만 14세 미만 아동의 개인정보</h2>
-  <p>본 앱은 만 14세 이상을 대상으로 하며, 만 14세 미만 아동을 의도적으로 대상으로 하지 않습니다. 만 14세 미만 아동의 개인정보는 의도적으로 수집하지 않습니다.</p>
+  <p>본 앱은 만 14세 미만 아동을 주된 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
 
   <h2>8. 광고 정책 및 보상형 광고</h2>
   <p>본 앱은 무료 서비스이며 광고로 운영됩니다. 광고는 게임 진행을 방해하지 않는 시점에만 노출되며, "이어하기"나 "보너스 획득" 같은 보상형 광고는 항상 선택사항입니다.</p>
@@ -217,11 +224,11 @@ a { color: var(--cyan); }
   <h2>9. 인앱 결제 및 환불 정책</h2>
   <p>본 앱은 광고 제거 등 일부 부가 기능을 인앱 상품으로 판매합니다.</p>
   <ul>
-    <li><strong>결제 시스템</strong>: 모든 결제는 Google Play 결제 시스템 또는 Apple App Store 결제 시스템을 통해 처리됩니다. 본 앱은 신용카드 번호, 은행 계좌 정보 등 결제 수단 정보를 직접 수집·저장하지 않습니다.</li>
-    <li><strong>일회성 결제</strong>: 광고 제거 상품은 일회성 결제이며, 동일한 계정에서 재설치하거나 다른 단말에 로그인할 때 자동으로 복원됩니다.</li>
-    <li><strong>환불 정책</strong>: 환불은 각 플랫폼의 환불 정책을 따릅니다. 결제 후 일정 기간 이내에는 사용자가 직접 환불을 신청할 수 있으며, 그 이후는 회사 또는 해당 플랫폼에 문의하셔야 합니다. 환불이 완료되면 광고 제거 효과는 다시 비활성화됩니다.</li>
+    <li><strong>결제 시스템</strong>: 모든 결제는 Google Play 결제 시스템(Google Play Billing)을 통해 처리됩니다. 본 앱은 신용카드 번호, 은행 계좌 정보 등 결제 수단 정보를 직접 수집·저장하지 않습니다.</li>
+    <li><strong>일회성 결제</strong>: 광고 제거 상품은 일회성 결제이며, 동일한 Google 계정에서 재설치하거나 다른 단말에 로그인할 때 자동으로 복원됩니다.</li>
+    <li><strong>환불 정책</strong>: 환불은 Google Play의 환불 정책을 따릅니다. 결제 후 48시간 이내에는 Google Play 스토어에서 사용자가 직접 환불을 신청할 수 있으며, 그 이후는 회사 또는 Google에 문의하셔야 합니다. 환불이 완료되면 광고 제거 효과는 다시 비활성화됩니다.</li>
     <li><strong>구독 여부</strong>: 본 앱의 인앱 상품은 일회성 구매이며, 자동 갱신 구독은 제공하지 않습니다.</li>
-    <li><strong>가격</strong>: 국가별 가격이 다르게 책정될 수 있으며, 결제 화면에 표시되는 가격이 최종 가격입니다.</li>
+    <li><strong>가격</strong>: 국가별 가격이 다르게 책정될 수 있으며, 결제 화면에 표시되는 가격이 최종 가격입니다. Google Play가 해당 국가의 부가세를 자동 처리합니다.</li>
   </ul>
 
   <h2>10. 개인정보 보호책임자 및 연락처</h2>
@@ -264,19 +271,23 @@ a { color: var(--cyan); }
   <p>Jeongneung-dong Games (operating as "JNDGames"; "we", "us", or "our") values your privacy. This Privacy Policy explains how information is collected, used, and shared when you use our mini-game collection app, "COIN UP!". By using the App, you agree to the collection and use of information in accordance with this policy.</p>
 
   <h2>2. Information We Collect</h2>
-  <p>The App does not require account registration and we do not directly collect personally identifiable information (PII) from users.</p>
+  <p>The App does not require account registration and we do not directly collect personally identifiable information (PII) from users. However, certain information may be collected automatically to operate the App, deliver ads, process optional in-app purchases, and improve service stability.</p>
 
   <h3>2.1 Automatically Collected Information</h3>
   <ul>
-    <li><strong>Advertising Identifiers</strong>: Google Advertising ID (GAID/AAID) on Android, IDFA on iOS. Not collected if the user declines ad tracking.</li>
+    <li><strong>Advertising Identifiers</strong>: Google Advertising ID (GAID/AAID) on Android, and IDFA on iOS if the App is distributed on iOS and the user allows tracking</li>
     <li><strong>Device Information</strong>: OS version, device model, language, timezone, screen resolution</li>
     <li><strong>Network Information</strong>: IP address (for country/city-level inference), mobile carrier, network type</li>
-    <li><strong>App Usage Data</strong>: Plays per game, play time, score statistics</li>
+    <li><strong>App Usage Data</strong>: Plays per game, play time, score statistics, crash reports</li>
     <li><strong>Ad Interaction Data</strong>: Ad impressions, clicks, completion of rewarded ads</li>
-    <li><strong>Purchase Records</strong>: A boolean flag indicating whether you own an in-app product (e.g., "Remove Ads"). Payment processing is handled by Google Play Billing or Apple App Store; we do not collect or store credit-card numbers, bank-account details, or any payment-method information.</li>
+    <li><strong>Version Check Data</strong>: App version, platform, request time, IP address, and minimum information needed to check update availability and service stability</li>
+    <li><strong>Purchase History</strong>: A local entitlement flag for in-app products purchased in the App, such as Remove Ads. Payments are processed by Google Play Billing, and the App does not directly collect credit card numbers, bank account details, or other payment method information.</li>
   </ul>
 
-  <h3>2.2 Information We Do Not Collect</h3>
+  <h3>2.2 Local On-Device Storage</h3>
+  <p>To provide gameplay features, the App may store a local player ID, best scores, play counts, in-game currency, settings, and Remove Ads ownership status on your device. This information is not sent to our own server by default and is removed when you uninstall the App or clear the App's local data.</p>
+
+  <h3>2.3 Information We Do Not Collect</h3>
   <ul>
     <li>Direct identifiers such as name, email, phone number</li>
     <li>Precise location (GPS)</li>
@@ -286,80 +297,65 @@ a { color: var(--cyan); }
   <h2>3. Purpose of Collection</h2>
   <ol>
     <li>Advertisement delivery and optimization</li>
-    <li>App functionality (saving progress)</li>
-    <li>In-app purchase processing (entitlement check only)</li>
+    <li>App functionality (saving progress, diagnosing crashes)</li>
+    <li>In-app purchase processing, entitlement verification, and Remove Ads activation</li>
+    <li>Version checks, update notices, and service stability monitoring</li>
     <li>Service analysis and improvement</li>
     <li>Fraud prevention</li>
   </ol>
 
   <h2>4. Data Retention</h2>
   <ul>
-    <li>Advertising identifiers and ad interaction data: up to 13 months</li>
+    <li>Advertising identifiers: up to 13 months</li>
     <li>Device and network information: up to 24 months</li>
     <li>App usage data: up to 24 months</li>
-    <li>Purchase ownership flag: retained until uninstall; auto-restored on reinstall via Google or Apple account</li>
+    <li>Crash reports: up to 12 months</li>
+    <li>Local on-device data: until you uninstall the App or clear the App's local data</li>
+    <li>Version check access logs: retained only as needed for service operation and security, and may be subject to the hosting provider's log policy</li>
+    <li>Purchase entitlement flag: retained locally until the App is deleted. Purchases may be restored through the Google Play account used for the purchase. Actual payment receipts are retained by Google Play Billing.</li>
   </ul>
 
   <h2>5. Third-Party Sharing</h2>
-  <p>We share data with the following third parties for ad delivery, identifier issuance, and payment processing:</p>
+  <p>We share or entrust data processing with the following third parties to operate ads, payments, version checks, and service infrastructure:</p>
   <table>
     <thead>
-      <tr><th>Provider</th><th>Purpose</th><th>Data Shared</th></tr>
+      <tr><th>Provider</th><th>Purpose</th><th>Data Processed</th></tr>
     </thead>
     <tbody>
-      <tr><td>Unity Technologies (LevelPlay mediation, including Unity Ads and ironSource networks)</td><td>Ad mediation SDK and ad serving</td><td>Advertising identifiers, device info, ad interaction data, approximate location (IP-derived)</td></tr>
-      <tr><td>Google LLC (Google Play Services)</td><td>Issues and manages Google Advertising ID (GAID)</td><td>Advertising identifier</td></tr>
-      <tr><td>Apple Inc. (iOS Ad Services)</td><td>Issues and manages IDFA (iOS only)</td><td>Advertising identifier</td></tr>
-      <tr><td>Google LLC (Google Play Billing) / Apple Inc. (App Store)</td><td>In-app purchase processing, refunds, receipt issuance</td><td>Purchased product ID, receipt, payment-method information (handled by the platform)</td></tr>
+      <tr><td>Unity Technologies (Unity LevelPlay, Unity Ads)</td><td>Ad mediation and ad delivery</td><td>Advertising identifiers, device information, approximate location, app usage data, ad interaction data</td></tr>
+      <tr><td>Google LLC (Google Play Billing)</td><td>In-app purchase processing, refunds, and receipt issuance</td><td>Purchased product ID, receipt, and payment method information processed by Google</td></tr>
+      <tr><td>Cloudflare, Inc.</td><td>Version check server hosting, security, and access log processing</td><td>IP address, request time, request URL, and browser/device network information</td></tr>
     </tbody>
   </table>
+  <p>If we enable additional ad mediation networks through Unity LevelPlay in the future, we will update this Privacy Policy and the relevant store data safety disclosures.</p>
 
   <h2>6. Your Rights</h2>
-
-  <h3>6.1 Ad Tracking Control</h3>
-  <p>On first launch, the App displays a consent prompt asking whether you allow personalized advertising. Declining does not prevent you from using the App — ads continue to be shown as non-personalized. You can change this setting at any time via the App's settings or your device's tracking controls.</p>
   <ul>
-    <li><strong>Android</strong>: Settings → Google → Ads → "Delete advertising ID" or "Reset advertising ID"</li>
-    <li><strong>iOS</strong>: Settings → Privacy & Security → Tracking → toggle off "Allow Apps to Request to Track"</li>
+    <li>Reset or delete your Android Advertising ID through Android settings</li>
+    <li>Disable tracking permission through iOS settings if the App is distributed on iOS</li>
+    <li>Uninstalling the App or clearing local app data removes local gameplay data stored by the App</li>
+    <li>Access, deletion, or restriction requests may be sent to the contact email below</li>
+    <li>GDPR rights (EEA/UK residents)</li>
+    <li>CCPA rights (California residents)</li>
   </ul>
-
-  <h3>6.2 General Rights</h3>
-  <p>You may request access, correction, deletion, or restriction of your data by contacting us at the address in Section 9. We will respond within 14 days.</p>
-
-  <h3>6.3 EEA / UK Residents (GDPR)</h3>
-  <p>If you are located in the European Economic Area, the United Kingdom, or Switzerland, you have the following rights under the General Data Protection Regulation (GDPR) and equivalent UK/Swiss law:</p>
-  <ul>
-    <li><strong>Right of access</strong> — obtain confirmation of, and a copy of, your personal data</li>
-    <li><strong>Right to rectification</strong> — request correction of inaccurate data</li>
-    <li><strong>Right to erasure</strong> ("right to be forgotten") — request deletion of your data</li>
-    <li><strong>Right to restriction of processing</strong></li>
-    <li><strong>Right to data portability</strong> — receive your data in a structured, machine-readable format</li>
-    <li><strong>Right to object</strong> — including objection to processing for direct marketing</li>
-    <li><strong>Right to withdraw consent</strong> at any time, without affecting the lawfulness of processing based on consent prior to withdrawal</li>
-    <li><strong>Right to lodge a complaint</strong> with your local supervisory authority</li>
-  </ul>
-
-  <h3>6.4 California Residents (CCPA / CPRA)</h3>
-  <p>If you are a California resident, you have the following rights under the California Consumer Privacy Act (CCPA) as amended by the CPRA:</p>
-  <ul>
-    <li><strong>Right to know</strong> what personal information we collect, use, and share</li>
-    <li><strong>Right to delete</strong> personal information we hold about you</li>
-    <li><strong>Right to correct</strong> inaccurate personal information</li>
-    <li><strong>Right to opt out of "sale" or "sharing"</strong> of personal information for cross-context behavioral advertising — exercised by declining the ad tracking prompt or via the App's settings ("Do Not Sell or Share My Personal Information")</li>
-    <li><strong>Right to non-discrimination</strong> for exercising any of the above rights</li>
-  </ul>
-  <p>We do not knowingly sell the personal information of consumers under 16 years of age.</p>
-
-  <h3>6.5 Brazilian Residents (LGPD)</h3>
-  <p>If you are located in Brazil, you have rights under the Lei Geral de Proteção de Dados (LGPD) including access, correction, anonymization, portability, deletion, information about sharing, and revocation of consent. Contact us via the address in Section 9 to exercise these rights.</p>
 
   <h2>7. Children's Privacy</h2>
-  <p>The App is intended for users aged 14 and older. We do not knowingly target users under the age of 14, and we do not knowingly collect personal information from children under 14.</p>
+  <p>The App is not directed at children under the age of 13 and we do not knowingly collect personal information from such children.</p>
 
   <h2>8. Advertising</h2>
-  <p>The App is free-to-play and supported by advertisements. Rewarded ads are shown only with your explicit consent. If you decline ad tracking, advertisements continue but are served as non-personalized.</p>
+  <p>The App is free-to-play and supported by advertisements. Ads are shown at points designed not to interrupt core gameplay, and rewarded ads are shown only when you choose to watch them for optional in-game benefits such as Continue or Bonus rewards.</p>
 
-  <h2>9. Contact</h2>
+  <h2>9. In-App Purchases and Refunds</h2>
+  <p>The App may sell optional in-app products, including Remove Ads.</p>
+  <ul>
+    <li><strong>Payment system</strong>: Payments are processed through Google Play Billing. The App does not directly collect or store credit card numbers, bank account information, or other payment method details.</li>
+    <li><strong>One-time purchase</strong>: Remove Ads is a one-time purchase and may be restored when you reinstall the App or sign in on another device with the same Google account.</li>
+    <li><strong>Refunds</strong>: Refunds follow Google Play's refund policy. After a refund is completed, the Remove Ads entitlement may be disabled.</li>
+    <li><strong>No subscriptions</strong>: The App does not currently offer auto-renewing subscriptions.</li>
+    <li><strong>Pricing</strong>: Prices may vary by country, and the price shown on the purchase screen is the final price.</li>
+  </ul>
+
+  <h2>10. Contact</h2>
   <table>
     <tbody>
       <tr><th>Company (Legal Name)</th><td>Jeongneung-dong Games (정릉동게임즈)</td></tr>
@@ -376,8 +372,14 @@ a { color: var(--cyan); }
     </tbody>
   </table>
 
-  <h2>10. Changes</h2>
-  <p>We may update this policy from time to time. Material changes will be announced in-app or by updating the "Last Updated" date at least 7 days before they take effect.</p>
+  <h2>11. Data Protection Authority Contacts</h2>
+  <ul>
+    <li>Korea Internet &amp; Security Agency (KISA): privacy.kisa.or.kr / 118</li>
+    <li>Personal Information Dispute Mediation Committee: kopico.go.kr / 1833-6972</li>
+  </ul>
+
+  <h2>12. Changes</h2>
+  <p>We may update this policy from time to time. Material changes will be announced in-app or by updating the "Last Updated" date.</p>
 </article>
 
 <footer>
